@@ -4,6 +4,7 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from "./resume.pdf";
+import "./Services.css";
 const Services = () => {
     return (
         <div className="services">
@@ -22,7 +23,7 @@ const Services = () => {
                     <button className="button s-button">Download CV</button>
                 </a>
                 <div
-                    className="blur s-blur"
+                    className="blur s-blur1"
                     style={{
                         background: "#ABF1FF94",
                     }}
@@ -54,18 +55,6 @@ const Services = () => {
                         emoji={Glasses}
                         heading={"Developer"}
                         detail={"HTML5, CSS3, Javscript"}
-                    />
-                </div>
-
-                <div
-                    style={{
-                        left: "14rem",
-                    }}
-                >
-                    <Card
-                        emoji={HeartEmoji}
-                        heading={"Design"}
-                        detail={"Figma, Sketch, Photoshop, Adobe XD"}
                     />
                 </div>
 

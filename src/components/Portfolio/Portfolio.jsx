@@ -8,6 +8,37 @@ import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
 
 const Portfolio = () => {
+    const projects = [
+        {
+            id: 1,
+            img: Sidebar,
+        },
+        {
+            id: 2,
+            img: Ecommerce,
+        },
+        {
+            id: 3,
+            img: HOC,
+        },
+        {
+            id: 4,
+            img: MusicApp,
+        },
+        {
+            id: 5,
+            img: Sidebar,
+        },
+        {
+            id: 6,
+            img: Ecommerce,
+        },
+        {
+            id: 7,
+            img: HOC,
+        },
+    ];
+
     return (
         <div className="portfolio">
             {/* Heading */}
@@ -22,18 +53,13 @@ const Portfolio = () => {
                 grabCursor={true}
                 className={"portfolio-slider"}
             >
-                <SwiperSlide>
-                    <img src={Sidebar} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Ecommerce} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={MusicApp} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={HOC} alt="" />
-                </SwiperSlide>
+                {projects.map((project) => {
+                    return (
+                        <SwiperSlide key={project.id}>
+                            <img src={project.img} alt="" />
+                        </SwiperSlide>
+                    );
+                })}
             </Swiper>
         </div>
     );

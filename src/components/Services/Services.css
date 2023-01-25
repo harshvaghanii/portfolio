@@ -38,6 +38,7 @@
 
 .cards {
     position: relative;
+    margin-left: 23rem;
 }
 
 .cards>* {
@@ -45,11 +46,12 @@
 }
 
 .s-blur1 {
+    position: absolute;
     top: 13rem;
     left: -18rem;
 }
 
 .s-blur2 {
     left: 14rem;
-    top: 8rem;
+    top: 18rem;
 }

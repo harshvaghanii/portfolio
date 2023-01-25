@@ -11,25 +11,27 @@ const Works = () => {
         <div className="works">
             {/* Left Side */}
 
-            <div className="awesome">
-                <span>Works for All these</span>
-                <span>Brands & Clients</span>
-                <span>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing.
-                    <br />
-                    Lorem ipsum, dolor sit amet consectetur adipisicing.
-                    <br />
-                    dolor sit amet consectetur adipisicing.
-                    <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                </span>
-                <button className="button s-button">Hire Me</button>
-                <div
-                    className="blur s-blur"
-                    style={{
-                        background: "#ABF1FF94",
-                    }}
-                ></div>
+            <div className="w-left">
+                <div className="awesome">
+                    <span>Works for All these</span>
+                    <span>Brands & Clients</span>
+                    <span>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        <br />
+                        Lorem ipsum, dolor sit amet consectetur adipisicing.
+                        <br />
+                        dolor sit amet consectetur adipisicing.
+                        <br />
+                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </span>
+                    <button className="button s-button">Hire Me</button>
+                    <div
+                        className="blur s-blur1"
+                        style={{
+                            background: "#ABF1FF94",
+                        }}
+                    ></div>
+                </div>
             </div>
 
             {/* Right Side */}

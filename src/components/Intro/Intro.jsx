@@ -9,7 +9,7 @@ import thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import glassesemoji from "../../img/glassesemoji.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
-
+import "./Intro.css";
 // End of Imports
 
 const Intro = () => {
