@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import Card from "../Card/Card";
 import Resume from "./resume.pdf";
 import "./Services.css";
+import { motion } from "framer-motion";
+import { themeContext } from "../../Context";
 const Services = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    // transition
+    const transition = {
+        duration: 1,
+        type: "spring",
+    };
     return (
         <div className="services">
             {/* Left Side */}
 
             <div className="awesome">
-                <span>My Awesome</span>
+                <span style={{ color: darkMode ? "white" : "" }}>
+                    My Awesome
+                </span>
                 <span>Services</span>
                 <span>
                     Lorem ipsum dolor sit, amet consectetur adipisicing.
@@ -33,36 +44,34 @@ const Services = () => {
             {/* Right Side */}
 
             <div className="cards">
-                <div
-                    style={{
-                        left: "14rem",
-                    }}
+                <motion.div
+                    initial={{ left: "25rem" }}
+                    whileInView={{ left: "14rem" }}
+                    transition={transition}
                 >
                     <Card
                         emoji={HeartEmoji}
                         heading={"Design"}
                         detail={"Figma, Sketch, Photoshop, Adobe XD"}
                     />
-                </div>
+                </motion.div>
 
-                <div
-                    style={{
-                        left: "-4rem",
-                        top: "12rem",
-                    }}
+                <motion.div
+                    initial={{ left: "-11rem", top: "12rem" }}
+                    whileInView={{ left: "-4rem" }}
+                    transition={transition}
                 >
                     <Card
                         emoji={Glasses}
                         heading={"Developer"}
                         detail={"HTML5, CSS3, Javscript"}
                     />
-                </div>
+                </motion.div>
 
-                <div
-                    style={{
-                        left: "12rem",
-                        top: "19rem",
-                    }}
+                <motion.div
+                    initial={{ top: "19rem", left: "25rem" }}
+                    whileInView={{ left: "12rem" }}
+                    transition={transition}
                 >
                     <Card
                         emoji={Humble}
@@ -71,7 +80,7 @@ const Services = () => {
                             "Lorem ipsum dummy text is a this very real dummy text and this is a very"
                         }
                     />
-                </div>
+                </motion.div>
 
                 <div
                     className="blur s-blur2"
