@@ -16,7 +16,7 @@ const Services = () => {
         type: "spring",
     };
     return (
-        <div className="services">
+        <div className="services" id="Services">
             {/* Left Side */}
 
             <div className="awesome">
@@ -31,7 +31,7 @@ const Services = () => {
                 </span>
 
                 <a href={Resume} target="_blank" rel="noopener noreferrer">
-                    <button className="button s-button">Download CV</button>
+                    <button className="button s-button">View Resume</button>
                 </a>
                 <div
                     className="blur s-blur1"

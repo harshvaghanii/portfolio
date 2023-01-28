@@ -43,7 +43,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className="portfolio">
+        <div className="portfolio" id="Portfolio">
             {/* Heading */}
             <span style={{ color: darkMode ? "white" : "" }}>
                 Recent Projects

@@ -89,6 +89,7 @@ const Intro = () => {
                     initial={{ left: "9rem", top: "18rem" }}
                     whileInView={{ left: "5rem" }}
                     transition={transition}
+                    className="floating-div"
                 >
                     <FloatingDiv
                         image={thumbup}

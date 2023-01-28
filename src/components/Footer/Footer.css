@@ -23,3 +23,9 @@
     gap: 2rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+    .f-content {
+        transform: scale(.5);
+    }
+}

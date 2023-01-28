@@ -36,7 +36,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-form">
+        <div className="contact-form" id="Contact">
             {/* Left Section Same as Work Section */}
             <div className="w-left">
                 <div className="awesome">
