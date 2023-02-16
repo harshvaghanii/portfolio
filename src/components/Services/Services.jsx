@@ -21,13 +21,14 @@ const Services = () => {
 
             <div className="awesome">
                 <span style={{ color: darkMode ? "white" : "" }}>
-                    My Awesome
+                    My Technical
                 </span>
-                <span>Services</span>
+                <span>Skills</span>
                 <span>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    A brief overview on the languages and technologies I am
+                    skilled with.
                     <br />
-                    Lorem ipsum, dolor sit amet consectetur adipisicing.
+                    For more information, view my Resume by clicking below.
                 </span>
 
                 <a href={Resume} target="_blank" rel="noopener noreferrer">
@@ -51,8 +52,8 @@ const Services = () => {
                 >
                     <Card
                         emoji={HeartEmoji}
-                        heading={"Design"}
-                        detail={"Figma, Sketch, Photoshop, Adobe XD"}
+                        heading={"Programming Languages"}
+                        detail={"Javascript, Java"}
                     />
                 </motion.div>
 
@@ -63,8 +64,10 @@ const Services = () => {
                 >
                     <Card
                         emoji={Glasses}
-                        heading={"Developer"}
-                        detail={"HTML5, CSS3, Javscript"}
+                        heading={"Web Technologies"}
+                        detail={
+                            "HTML5, CSS3, Javscript, ReactJS, NodeJS, ExpressJS"
+                        }
                     />
                 </motion.div>
 
@@ -75,10 +78,8 @@ const Services = () => {
                 >
                     <Card
                         emoji={Humble}
-                        heading={"UI/UX"}
-                        detail={
-                            "Lorem ipsum dummy text is a this very real dummy text and this is a very"
-                        }
+                        heading={"Other Technologies"}
+                        detail={"Git, Github, MongoDB, SQL"}
                     />
                 </motion.div>
 

@@ -2,10 +2,9 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import Ecommerce from "../../img/Ecommerce.jpg";
+import NoteZipper from "../../img/NoteZipper.jpg";
+import UnderConstruction from "../../img/UnderConstruction.png";
 import { themeContext } from "../../Context";
 
 const Portfolio = () => {
@@ -14,31 +13,39 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            img: Sidebar,
+            img: NoteZipper,
+            link: "https://github.com/harshvaghanii/notes",
+            available: true,
         },
         {
             id: 2,
             img: Ecommerce,
+            link: "https://toykart-3ba5e.web.app/",
+            available: true,
         },
         {
             id: 3,
-            img: HOC,
+            img: UnderConstruction,
+            link: "/",
+            available: false,
         },
         {
             id: 4,
-            img: MusicApp,
+            img: UnderConstruction,
+            link: "/",
+            available: false,
         },
         {
             id: 5,
-            img: Sidebar,
+            img: UnderConstruction,
+            link: "/",
+            available: false,
         },
         {
             id: 6,
-            img: Ecommerce,
-        },
-        {
-            id: 7,
-            img: HOC,
+            img: UnderConstruction,
+            link: "/",
+            available: false,
         },
     ];
 
@@ -61,7 +68,13 @@ const Portfolio = () => {
                 {projects.map((project) => {
                     return (
                         <SwiperSlide key={project.id}>
-                            <img src={project.img} alt="" />
+                            <a
+                                href={project.link}
+                                target={project.available ? "_blank" : ""}
+                                rel="noreferrer"
+                            >
+                                <img src={project.img} alt="" />
+                            </a>
                         </SwiperSlide>
                     );
                 })}

@@ -12,6 +12,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import "./Intro.css";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 // End of Imports
 
 const Intro = () => {
@@ -31,11 +32,15 @@ const Intro = () => {
                     </span>
                     <span>Harsh Vaghani</span>
                     <span>
-                        Frontend Developer with high level of experience in web
-                        designing and development, producing the Quality work!
+                        An Engineer equipped with array of experience and
+                        Expertise such as Software Development,<br /> 
+                        Business
+                        Analysis and on a mission to produce Quality Work!
                     </span>
                 </div>
-                <button className="button i-button">Hire me!</button>
+                <Link spy={true} smooth={true} to={"Contact"}>
+                    <button className="button i-button">Hire me!</button>
+                </Link>
                 <div className="i-icons">
                     <a
                         href="https://github.com/harshvaghanii"
@@ -80,7 +85,7 @@ const Intro = () => {
                 >
                     <FloatingDiv
                         image={Crown}
-                        txt1={"Web"}
+                        txt1={"Software"}
                         txt2={"Developer"}
                     />
                 </motion.div>
@@ -93,8 +98,8 @@ const Intro = () => {
                 >
                     <FloatingDiv
                         image={thumbup}
-                        txt1={"Best Design"}
-                        txt2={"Award"}
+                        txt1={"Technical"}
+                        txt2={"Analyst"}
                     />
                 </motion.div>
 

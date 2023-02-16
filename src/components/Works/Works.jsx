@@ -1,10 +1,10 @@
 import "./Works.css";
 import React, { useContext } from "react";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Oracle from "../../img/Oracle.png";
+import HackerRank from "../../img/HackerRank.png";
+import Sololearn from "../../img/Sololearn.png";
+import Udemy from "../../img/Udemy.png";
+import GFG from "../../img/GFG.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -24,17 +24,14 @@ const Works = () => {
             <div className="w-left">
                 <div className="awesome">
                     <span style={{ color: darkMode ? "white" : "" }}>
-                        Works for All these
+                        Certifications from
                     </span>
-                    <span>Brands & Clients</span>
+                    <span>Renowned Organizations</span>
                     <span>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                        <br />
-                        Lorem ipsum, dolor sit amet consectetur adipisicing.
-                        <br />
-                        dolor sit amet consectetur adipisicing.
-                        <br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
+                        While learning to code, I acquired certificates from
+                        various organizations. <br />
+                        Feel free to get in touch or view my resume for more
+                        details
                     </span>
                     <Link spy={true} smooth={true} to={"Contact"}>
                         <button className="button s-button">Hire Me</button>
@@ -58,19 +55,19 @@ const Works = () => {
                     className="w-mainCircle"
                 >
                     <div className="w-secCircle">
-                        <img src={Upwork} alt="Upwork Logo" />
+                        <img src={HackerRank} alt="HackerRank Logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Fiverr} alt="Fiverr Logo" />
+                        <img src={Udemy} alt="Udemy Logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Amazon} alt="Amazon Logo" />
+                        <img src={Oracle} alt="Oracle Logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Shopify} alt="Shopify Logo" />
+                        <img src={Sololearn} alt="Sololearn Logo" />
                     </div>
                     <div className="w-secCircle">
-                        <img src={Facebook} alt="Facebook Logo" />
+                        <img src={GFG} alt="GFG Logo" />
                     </div>
                 </motion.div>
                 {/* Background Circles */}
