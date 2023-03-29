@@ -1,4 +1,4 @@
-# My Personal Portfolio Using React
+# My Personal Portfolio
 
 This project is created using React and some libraries using [Create React App](https://github.com/facebook/create-react-app).
 
