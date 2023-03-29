@@ -2,6 +2,8 @@
 
 This project is created using React and some libraries using [Create React App](https://github.com/facebook/create-react-app).
 
+The project is hosted live on Netlify. [Demo Link](https://harshvaghani-portfolio.netlify.app/) 
+
 ## Details
 
 The project is created using React JS. It includes my contact information and lists down my experience and projects that I have built.
