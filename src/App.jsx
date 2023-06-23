@@ -6,7 +6,7 @@ import Services from "./components/Services/Services";
 // import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Testimonials from "./components/Testimonials/Testimonials";
+// import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { themeContext } from "./Context";
@@ -29,7 +29,7 @@ const App = () => {
             {/* <Experience /> */}
             <Works />
             <Portfolio />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Contact />
             <Footer />
         </div>

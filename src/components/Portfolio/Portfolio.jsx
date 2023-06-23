@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Ecommerce from "../../img/Ecommerce.jpg";
 import NoteZipper from "../../img/NoteZipper.jpg";
-import UnderConstruction from "../../img/UnderConstruction.png";
+import ChatApplication from "../../img/ChatApplication.jpg";
 import { themeContext } from "../../Context";
 
 const Portfolio = () => {
@@ -25,27 +25,9 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            img: UnderConstruction,
+            img: ChatApplication,
             link: "/",
-            available: false,
-        },
-        {
-            id: 4,
-            img: UnderConstruction,
-            link: "/",
-            available: false,
-        },
-        {
-            id: 5,
-            img: UnderConstruction,
-            link: "/",
-            available: false,
-        },
-        {
-            id: 6,
-            img: UnderConstruction,
-            link: "/",
-            available: false,
+            available: true,
         },
     ];
 

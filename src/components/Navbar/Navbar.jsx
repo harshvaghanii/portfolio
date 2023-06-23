@@ -45,14 +45,14 @@ const Navbar = () => {
                         >
                             <li>Portfolio</li>
                         </Link>
-                        <Link
+                        {/* <Link
                             spy={true}
                             to={"Testimonials"}
                             smooth={true}
                             activeClass="activeClass"
                         >
                             <li>Testimonials</li>
-                        </Link>
+                        </Link> */}
                     </ul>
                 </div>
                 <Link spy={true} smooth={true} to={"Contact"}>
