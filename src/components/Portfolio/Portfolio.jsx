@@ -13,8 +13,8 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            img: NoteZipper,
-            link: "https://github.com/harshvaghanii/notes",
+            img: ChatApplication,
+            link: "/https://github.com/harshvaghanii/chatapplication",
             available: true,
         },
         {
@@ -25,8 +25,8 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            img: ChatApplication,
-            link: "/",
+            img: NoteZipper,
+            link: "https://github.com/harshvaghanii/notes",
             available: true,
         },
     ];
