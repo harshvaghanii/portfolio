@@ -14,7 +14,7 @@ const Portfolio = () => {
         {
             id: 1,
             img: ChatApplication,
-            link: "/https://github.com/harshvaghanii/chatapplication",
+            link: "https://github.com/harshvaghanii/chatapplication",
             available: true,
         },
         {
